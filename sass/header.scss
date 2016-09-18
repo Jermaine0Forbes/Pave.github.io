@@ -1,0 +1,56 @@
+/* Header */
+
+div#upper-link{
+ background:$bBlue;
+ border-bottom: 5px solid $bGrey;
+ min-width:246px;
+ ul{
+    margin:0;
+      padding:13px 7px;
+   li{
+    //  float:right;
+     list-style:$nope;
+     a{
+       @include upperlink;
+       &:hover{
+         text-decoration:underline;
+       }
+     }
+   }
+ }
+}
+
+div#bottom-header{
+margin-top:50px;
+}
+
+div.nav{
+ ul{
+   margin-top:30px;
+   li{
+      list-style:none;
+      font-size:18px;
+      padding: 0 15px;
+    a{
+      color:$bBlue;
+      text-transform:$upper;
+      font-family:$verdana;
+    }
+   }
+ }
+
+}
+
+div#logo{
+  min-height:100px;
+
+  img{
+    position:absolute;
+    z-index:2;
+    top:-10px;
+
+    height:170.5px;
+    width:365px;
+
+  }
+}

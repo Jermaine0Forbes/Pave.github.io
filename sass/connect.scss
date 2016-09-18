@@ -1,0 +1,99 @@
+#connect-title{
+  margin-top:60px;
+  h2{
+    font-family:$georgia;
+    font-size:25px;
+    color:$bRed;
+    text-transform:$upper;
+  }
+}
+
+
+#top-footer{
+  background:$bGrey;
+  border-top:1px solid grey;
+  // min-height:83px;
+  padding:30px 0;
+
+  ul{
+    padding-left:0;
+    margin-bottom:0;
+  }
+
+  li{
+
+    &:nth-child(1) a{
+       @include sharelink("../img/redfac.svg",60px 60px)
+     }
+    &:nth-child(2) a{
+      @include sharelink("../img/redgoo.svg",60px 60px)
+    }
+    &:nth-child(3) a{
+      @include sharelink("../img/redfli.svg",60px 60px)
+    }
+    &:nth-child(4) a{
+      @include sharelink("../img/redtwi.svg",60px 60px)
+    }
+  }
+  a{
+    height:60px;
+    width:60px;
+    display:inline-block;
+    // padding:30px;
+    }
+  }
+
+#search-bar{
+  position:relative;
+  height:45px;
+  overflow:hidden;
+  max-width:$searchW;
+  margin-top:10px;
+  margin-bottom:10px;
+  width:100%;
+  input{
+
+    border:2px solid $bRed;
+    height:45px;
+    border-radius: 10px 15px 15px 10px;
+    max-width:$searchW;
+    width:100%;
+    font-size:20px;
+
+  }
+  button{
+    position:absolute;
+    top:0;
+    right:0;
+    background:$bRed;
+    color:white;
+    font-size:20px;
+    border-radius: 0 15px 15px 0;
+    padding:8px 14px;
+    
+  }
+}
+
+
+#bottom-title{
+background:$bRed;
+color:white;
+min-height:32px;
+padding:12px 0;
+ .b-title{
+   text-transform:$upper;
+   font-size:18px;
+   font-family:$verdana;
+ }
+
+}
+
+#link-list{
+  background:$bBlue;
+  color:white;
+  min-height:200px;
+
+  a{
+    color:white;
+  }
+}

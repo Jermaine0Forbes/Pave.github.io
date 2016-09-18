@@ -1,0 +1,27 @@
+
+$bGrey:#e6e6e6;
+$font : arial,helvetica;
+$fsize :1em;
+$bBlue: #1f1a3f;
+$bRed: #c1272d;
+$nope: none;
+$upper: uppercase;
+$verdana: verdana, arial, sans-serif;
+$arial: arial,sans-serif;
+$georgia: georgia,"times new roman",serif;
+$searchW:380px;
+@mixin upperlink (){
+  color:white;
+  text-decoration:$nope;
+  text-transform:$upper;
+  font-family:$georgia;
+  min-width:246px;
+
+  font-size:18px;
+
+}
+
+@mixin sharelink($link, $size:30px 30px){
+  background: url($link) no-repeat;
+  background-size:$size;
+}
