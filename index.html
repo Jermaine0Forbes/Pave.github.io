@@ -5,208 +5,328 @@
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pave</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="manifest" href="img/manifest.json">
+<!-- <meta name="msapplication-TileColor" content="#ffffff"> -->
+<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+<!-- <meta name="theme-color" content="#ffffff"> -->
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 <div class="container">
+    <header>
+      <div id="header" >
+        <div class="row">
+          <div id="upper-link" class="col-lg-4 col-lg-offset-8  col-md-6 col-md-offset-6 col-sm-12">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3 col-md-offset-0 col-md-12">
+                <ul class="list-inline ">
+                  <li><a href="#">donate</a></li>
+                  <li><a href="#">get help</a></li>
+                  <li><a href="#">fundraise</a></li>
+                </ul>
+              </div>
 
-    <div id="header" class="row">
+            </div>
 
-        <div id="upper-link" class="col-md-4 col-md-offset-8">
-          <ul class="list-inline">
-            <li><a href="#">donate</a></li>
-            <li><a href="#">get help</a></li>
-            <li><a href="#">fundraise</a></li>
-          </ul>
-        </div><!-- upper-link -->
-
-        <div id="bottom-header" class="col-md-12">
-
-            <div id="logo" class="col-md-4">
-             <a href="#">  <img src="img/paveLogo.svg"  /></a>
-            </div><!--logo -->
-
-            <div  class="nav col-md-8">
-              <ul class="list-inline">
-                <li><a href="#">programs</a></li>
-                <li><a href="#">locations</a></li>
-                <li><a href="#">news</a></li>
-                <li><a href="#">get involved</a></li>
-                <li><a href="#">about</a></li>
-              </ul>
-            </div><!--nav-->
+          </div><!-- upper-link -->
+        </div><!-- row -->
 
 
-        </div><!-- bottom-header -->
+          <div id="bottom-header" class="">
+            <div class="row">
+              <div id="logo" class="col-sm-6 col-sm-offset-3  col-xs-6 col-xs-offset-3  col-md-offset-1 col-md-5   col-lg-4">
+               <a href="#">
+                 <img class="visible-md-5 hidden-sm hidden-xs" src="img/paveLogo.svg"  />
+                 <img class="visible-sm-6 hidden-md " src="img/paveLogo2.svg"  />
+               </a>
+              </div><!--logo -->
+              <nav>
 
-    </div><!-- header -->
-    <div id="slideshow" class="row">
-      <div id="slide-container" class="col-md-12">
+                <div  class=" col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-offset-0 col-md-6 col-lg-7 ">
+                  <div class="navbar">
+                    <div class="visible-xs btn-collapse">
+                      <button type="button" class="menu btn btn-primary" data-toggle="collapse" data-target="#navT" name="button">
+                        <span class="glyphicon glyphicon-align-justify"></span>
+                      </button>
+                    </div>
 
-          <div id="slide" class="col-md-8">
-            <span class="s-click"></span>
-            <span class="s-click"></span>
-            <a href="#"> <img src="img/veterans.jpg" alt="Army Veterans" /></a>
+                    <div id="navT" class="collapse navbar-collapse">
+                      <ul class="list-inline nav navbar-nav">
+                        <li><a href="#">programs</a></li>
+                        <li><a href="#">locations</a></li>
+                        <li><a href="#">news</a></li>
+                        <li><a href="#">get involved</a></li>
+                        <li><a href="#">about</a></li>
+                      </ul>
+                    </div><!--collapse -->
+                  </div><!-- navbar -->
 
-          </div><!-- slide -->
-          <div id="slide-description" class="col-md-4">
+
+                </div><!--col-xs-10-->
+              </nav>
+            </div><!-- row -->
+
+          </div><!-- bottom-header -->
+
+      </div><!-- header -->
+    </header>
+    <main>
+      <div id="slideshow" >
+        <div class="row">
+          <div id="slide-container" class="col-md-12">
+
+              <div id="slide" class="col-md-8 col-sm-12 ">
+                <span class="s-click"><img src="img/leftA.png" alt="" /></span>
+                <span class="s-click"><img src="img/riteA.png" alt="" /></span>
+
+                <div class="slide secondary">
+                  <a href="#" > <img src="img/veteransN.png" alt="Army Veterans" /></a>
+                </div>
+
+                <div class="slide">
+                  <a href="#" > <img src="img/flag.png" alt="Army Veterans" /></a>
+                </div>
+
+                <div class="slide">
+                  <a href="#" > <img src="img/guns.png" alt="Army Veterans" /></a>
+                </div>
+
+
+              </div><!-- slide -->
+              <div id="slide-description" class="col-md-4 col-sm-12 col-xs-12">
+                <div class="text">
+                  <p>
+                    Become a winner by
+                    donating to the disabled
+                    veterans organization in
+                    order to change people’s live
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+                  </p>
+
+                <a href="#"><button class="btn" type="button" name="button">Make a change</button></a>
+                </div>
+                <div class="text">
+                  <p>
+                    Dignissim diam montes diam dapibus pharetra nullam quis justo mus pretium aptent per taciti egestas urna etiam condimentum habitant. Habitasse dictumst adipiscing, senectus proin nascetur sociis ridiculus cum litora lorem platea. Odio.
+
+                    Nam nibh, habitant bibendum mauris class sapien est molestie, dapibus maecenas sagittis suspendisse sociosqu vitae, varius convallis. Etiam accumsan sit leo etiam vehicula duis, aliquam pulvinar ipsum dictumst neque accumsan, at.
+
+                    Rhoncus et, imperdiet mi dictum curabitur iaculis eget hymenaeos varius facilisi nisl nullam dui amet rutrum neque mi massa gravida ut. Integer condimentum auctor accumsan donec justo lacus dictum aliquet lobortis natoque. Ligula volutpat dignissim porttitor mus.                  </p>
+
+                <a href="#"><button class="btn" type="button" name="button">Make a donation</button></a>
+                </div>
+                <div class="text">
+                  <p>
+                    Euismod aliquam. Ultrices bibendum. Posuere non, id Molestie taciti. Scelerisque dapibus convallis vitae tortor consectetuer. Proin dis condimentum. Mauris euismod morbi lorem torquent. Nisl mi tellus venenatis mus sapien habitant cras quis sed nisl, sodales curabitur aptent quisque nostra integer pulvinar mus, id viverra risus.
+
+                    Conubia lectus. Augue litora ipsum feugiat senectus nunc eu magnis senectus mattis litora sem id, platea, aenean interdum viverra. Varius justo semper pede et. Curae;. Lectus gravida consequat augue dictum.
+
+                    Arcu nonummy sodales leo ante orci posuere sagittis ridiculus torquent penatibus sollicitudin. Etiam montes tristique dapibus vivamus in aliquet diam gravida pellentesque euismod metus platea.                  </p>
+
+                <a href="#"><button class="btn" type="button" name="button">Support your veterans</button></a>
+                </div>
+              </div><!-- slide-description -->
+
+
+          </div><!-- slide-container -->
+        </div><!-- row -->
+        <div class="row">
+          <div id="bottom-red" class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <span>34</span>
+              <h4>Programs in operations</h4>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <span>317</span>
+              <h4>Houses in operation</h4>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <span>3,247</span>
+              <h4>Disabled veterans served</h4>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <span>$457,821</span>
+              <h4>in savings to disabled veterans</h4>
+            </div>
+          </div><!-- bottom-red -->
+        </div>
+
+      </div><!-- slideshow -->
+      <div id="news" >
+        <div id="news-title" class="row">
+          <div class="col-md-4  col-md-offset-1 col-xs-offset-2 col-xs-8">
+            <h2>News & Features</h2>
+          </div>
+        </div><!-- news-title -->
+        <div id="news-container" class="row">
+
+          <div class="news-img col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+            <img src="img/linedUpV.png" alt="Veterans aligned together" />
             <p>
-              Become a winner by
-              donating to the disabled
-              veterans organization in
-              order to change people’s live
+              At vero eos et accusamus et iusto odio dignissimos ducimus
             </p>
-            <a href="#"><button class="btn" type="button" name="button">Make a change</button></a>
-          </div><!-- slide-description -->
+          </div><!-- news-img -->
 
+          <div class="news-img col-md-4  col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+            <img src="img/womanBlackDress.jpg" alt="Woman in a black dress" />
+            <p>
+              Vestibulum sem dolor, ornare ut sapien sagittis, faucibus lacinia
+            </p>
+          </div><!-- news-img -->
 
-      </div><!-- slide-container -->
-      <div id="bottom-red" class="col-md-12">
-        <div class="col-md-3">
-          <span>34</span>
-          <h4>Programs in operations</h4>
-        </div>
+          <div class="news-img col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+            <img src="img/fund.png" alt="A fundraiser for veterans" />
+            <p>
+              Pellentesque lorem velit, porttitor fringilla rhoncus quis, vehicula et
+            </p>
+          </div><!-- news-img -->
 
-        <div class="col-md-3">
-          <span>317</span>
-          <h4>Houses in operation</h4>
-        </div>
-
-        <div class="col-md-3">
-          <span>3,247</span>
-          <h4>Disabled veterans served</h4>
-        </div>
-
-        <div class="col-md-3">
-          <span>$457,821</span>
-          <h4>in savings to disabled veterans</h4>
-        </div>
-      </div><!-- bottom-red -->
-    </div><!-- slideshow -->
-    <div id="news" >
-      <div id="news-title" class="row">
-        <div class="col-md-4  col-md-offset-1">
-          <h2>News & Features</h2>
-        </div>
-      </div><!-- news-title -->
-      <div id="news-container" class="row">
-
-        <div class="news-img col-md-4">
-          <img src="img/linedUpVeterans.png" alt="Veterans aligned together" />
-          <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus
-          </p>
-        </div><!-- news-img -->
-
-        <div class="news-img col-md-4">
-          <img src="img/womanBlackDress.jpg" alt="Woman in a black dress" />
-          <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus
-          </p>
-        </div><!-- news-img -->
-
-        <div class="news-img col-md-4">
-          <img src="img/fundraiser.jpg" alt="A fundraiser for veterans" />
-          <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus
-          </p>
-        </div><!-- news-img -->
-
-      </div><!-- news-container -->
-    </div><!-- news -->
-    <div id="connect"  class="row">
-      <div id="connect-title" class="row ">
-        <div class="col-md-4 col-md-offset-1">
-          <h2>Connect With Us</h2>
-        </div>
-      </div><!-- connect-title -->
-
-      <div id="footer" class="col-md-12">
-        <div id="top-footer" class="row">
-          <ul class="list-inline  col-md-offset-1 col-md-4">
-            <li><a href="#" title="facebook"></a></li>
-            <li><a href="#" title="google plus"></a></li>
-            <li><a href="#" title="flickr"></a></li>
-            <li><a href="#" title="twitter"></a></li>
-          </ul>
-
-          <div id="search-bar" class="col-md-offset-6 ">
-            <input type="text" name="name" placeholder=" Search">
-            <button type="submit" class="glyphicon glyphicon-search btn" name="button"></button>
+        </div><!-- news-container -->
+      </div><!-- news -->
+    </main>
+    <footer>
+      <div id="connect"  class="row">
+        <div id="connect-title" class="row ">
+          <div class="col-md-4 col-md-offset-1 col-xs-offset-2 col-xs-8">
+            <h2>Connect With Us</h2>
           </div>
-        </div><!-- top-footer -->
-        <div id="bottom-footer">
-          <div id ="bottom-title" class="row">
-            <div class="b-title col-md-2 col-md-offset-1">
-              programs
-            </div>
-            <div class="b-title col-md-2">
-              locations
-            </div>
-            <div class="b-title col-md-2">
-              news
-            </div>
-            <div class="b-title col-md-2">
-              get involved
-            </div>
-            <div class="b-title col-md-2">
-              about
-            </div>
+        </div><!-- connect-title -->
 
-          </div>
-
-          <div id="link-list" class="row">
-
-            <ul class="col-md-2 col-md-offset-1">
-              <li><a href="#">House</a></li>
-              <li><a href="#">Hero Miles</a></li>
-              <li><a href="#">Hotel for Heroes</a></li>
-              <li><a href="#">Newman's Own Reward</a></li>
-              <li><a href="#">Team Pave</a></li>
+        <div id="footer" class="col-md-12">
+          <div id="top-footer" class="row">
+            <ul class="list-inline  col-md-offset-1 col-md-4  col-lg-offset-1 col-lg-4 col-xs-offset-2 col-xs-9 col-sm-offset-2 col-sm-8">
+              <li><a href="#" title="facebook"></a></li>
+              <li><a href="#" title="google plus"></a></li>
+              <li><a href="#" title="flickr"></a></li>
+              <li><a href="#" title="twitter"></a></li>
             </ul>
 
-            <ul class="col-md-2">
-              <li>Charity Navigator</li>
-              <li>139 Harristown Rd</li>
-              <li>Suite 101</li>
-              <li>Glen Rock, NJ, 07452</li>
-              <li>Phone: 201-881-1288</li>
-            </ul>
+            <div id="search-bar" class="col-lg-offset-1 col-lg-4 col-md-offset-1 col-md-4 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 ">
+              <input type="text" name="name" placeholder=" Search">
+              <button type="submit" class="glyphicon glyphicon-search btn" name="button"></button>
+            </div>
+          </div><!-- top-footer -->
+          <div id="bottom-footer">
+            <div id ="bottom-title" class="row hidden-xs">
+              <div class="b-title col-md-2 col-md-offset-1 col-sm-offset-1 col-sm-2">
+                programs
+              </div>
+              <div class="b-title col-md-2 col-sm-2">
+                locations
+              </div>
+              <div class="b-title col-md-2 col-sm-2">
+                news
+              </div>
+              <div class="b-title col-md-2 col-sm-2">
+                get involved
+              </div>
+              <div class="b-title col-md-2 col-sm-2">
+                about
+              </div>
 
-            <ul class="col-md-2">
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Articles</a></li>
-              <li><a href="#">Photos</a></li>
-              <li><a href="#">Videos</a></li>
-              <li><a href="#">Pave Stories</a></li>
-            </ul>
+            </div>
 
-            <ul class="col-md-2">
-              <li><a href="#">Donate</a></li>
-              <li><a href="#">Volunteer</a></li>
-              <li><a href="#">Participate</a></li>
-            </ul>
+            <div id="link-list" class="row">
+              <div class="lList col-md-2 col-md-offset-1  col-sm-offset-1 col-sm-2 col-xs-12 col-xs-offset-0">
+                <div class=" list-xs">
+                  <h4 class="hidden-sm-2 visible-xs">programs</h4>
+                  <ul class="">
+                    <li><a href="#">House</a></li>
+                    <li><a href="#">Hero Miles</a></li>
+                    <li><a href="#">Hotel for Heroes</a></li>
+                    <li><a href="#">Newman's Own Reward</a></li>
+                    <li><a href="#">Team Pave</a></li>
+                  </ul>
+                </div>
 
-            <ul class="col-md-2">
-              <li><a href="#">History</a></li>
-              <li><a href="#">Leadership</a></li>
-              <li><a href="#">Supporters</a></li>
-              <li><a href="#">Financial Accountability</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
+              </div>
 
-          </div><!-- link-list -->
-        </div><!-- bottom-footer -->
-      </div><!-- footer -->
-    </div><!-- connect -->
+              <div class="lList col-md-2 col-sm-2 col-xs-12">
+                <div class=" list-xs ">
+                  <h4 class="hidden-sm-2 visible-xs">locations</h4>
+                  <ul >
+                    <li>Charity Navigator</li>
+                    <li>139 Harristown Rd</li>
+                    <li>Suite 101</li>
+                    <li>Glen Rock, NJ, 07452</li>
+                    <li>Phone: 201-881-1288</li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="lList col-md-2 col-sm-2 col-xs-12">
+                <div class="list-xs">
+                  <h4 class="hidden-sm-2 visible-xs">news</h4>
+                  <ul >
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Pave Stories</a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="lList col-md-2 col-sm-2 col-xs-12">
+                <div class="list-xs ">
+                  <h4 class="hidden-sm-2 visible-xs">get involved</h4>
+                  <ul >
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="#">Participate</a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="lList col-md-2 col-sm-2 col-xs-12">
+                <div class="list-xs">
+                  <h4 class="hidden-sm-2 visible-xs">about</h4>
+                  <ul >
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Leadership</a></li>
+                    <li><a href="#">Supporters</a></li>
+                    <li><a href="#">Financial Accountability</a></li>
+                    <li><a href="#">FAQ</a></li>
+                  </ul>
+                </div>
+
+              </div>
 
 
+            </div><!-- link-list -->
+          </div><!-- bottom-footer -->
+        </div><!-- footer -->
+      </div><!-- connect -->
+    </footer>
 </div><!-- container -->
   </body>
+  <script src="js/pave.js">  </script>
+  <!-- Need JQuery -->
 </html>

@@ -10,23 +10,38 @@
 
 #news-container{
   background:$bBlue;
-  height:439px;
   border-top:$bRed 4px solid;
-  .news-img{
-    text-align:center;
+              .news-img{
+                text-align:center;
+                -webkit-animation: picture 3s ease;
+                animation:picture 3s ease ;
 
-    img{
-      height:100%;
-      width:100%;
-      margin-top:30px;
+                -moz-animation:picture 3s ease ;
+                img{
+                  height:100%;
+                  width:100%;
+                  margin-top:30px;
 
-    }
-    p{
-      color:white;
-      font-family:$arial;
-      font-family:15px;
-      text-indent:15px;
-    }
+                }
+                p{
+                  margin:15px;
+                  color:white;
+                  font-family:$arial;
+                  font-size:17px;
+                  text-indent:15px;
+                }
+              }
+
+}
+
+@keyframes picture{
+  from{transform: translateX(100px); opacity:0;}
+  50%{ opacity:0;}
+  to{opacity:1;}
+}
+
+@media (max-width:320px){
+  #news-title h2{
+    font-size:20px;
   }
-
 }
